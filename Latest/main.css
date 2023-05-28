@@ -1,0 +1,297 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style-type:none;
+	font-family: Lato;
+	outline:none;
+	color:black;
+	/*border:1px solid;*/
+}
+body,html{
+	width:100%;
+	height:100%;
+	background:radial-gradient(#f4f4f4, #EDDBC7);
+}
+.col, footer, #regform, .logbox, .navbar{
+	display:flex;
+}
+header{
+	background:#2b2b2b;
+	position:sticky;
+	top:0;
+	z-index:1;
+	width:100%;
+}
+header h1{
+	color:#f4f4f4;
+	margin:0 20px;
+	font-size:40px;
+	letter-spacing:8px;
+	line-height:70px;
+}
+.navbar{
+	line-height:70px;
+	justify-content:space-between;
+}
+.navbar li{
+	display:inline-block;
+	margin: 0 10px;
+	line-height:70px;
+}
+.navbar .drop-btn{
+	padding:10px;
+	border:none;
+	background-color:transparent;
+	font-size:15px;
+	text-align:center;
+}
+.drop-btn:hover{
+	color:gray;
+}
+#showcase{
+	min-height:400px;
+	background:url("Img/Resto.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align:center;
+	padding:50px 40px;
+	z-index:-0;
+}
+.container h1, p{
+	color:#fff;
+}
+#showcase h1{
+	font-size:55px;
+	margin-bottom:10px;
+}
+#showcase p{
+	font-size:20px;
+}
+#newsletter {
+	padding:20px;
+}
+#newsletter input{
+	padding:4px;
+	height:25px;
+}
+#regform input{
+	color:black;
+	margin:10px 0;
+	flex-direction:column;
+}
+
+.men-btn{
+	width:50px;
+	height:50px;
+	display:none;
+	margin:10px;
+	background-color:transparent;
+	box-shadow: gray 3px 1px 2px;
+	border-radius:5px;
+	border:none;
+	font-size:20px;
+}
+.logbtn span{
+	display:inline-block;
+	margin:0 10px;
+	color:black;
+	font-size:20px;
+}
+.logbtn a{
+	color:black;
+}
+.logbox {
+	flex-direction:column;
+	text-align:center;
+	max-width:50%;
+	margin:auto;
+}
+#regform{
+	flex-direction:column;
+}
+.btn{
+	font-size:15px;
+	padding:10px 15px;
+	border-color:transparent;
+	box-shadow: gray 3px 1px 2px;
+	border-radius:5px;
+	cursor:pointer;
+	background-color:#F8EAD8;
+	color:black;
+}
+.login{
+	font-size:15px;
+	margin:20px;
+	color:darkgray;
+}
+footer{
+	justify-content:space-around;
+	background-color:black;
+	opacity:.7;
+	padding:10px;
+	z-index:1;
+}
+.col{
+	flex-direction:column;
+}
+h3, a{
+	color:#f4f4f4;
+	margin:5px;
+	font-style:italic;
+}
+footer i{
+	color:#f4f4f4;
+	margin:5px;
+	font-size:15px;
+}
+
+@media only screen and (max-width: 725px){
+.navbar #dropdown{
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+	top:70px;
+	width:100%;
+	overflow:hidden;
+	background-color:#F8EAD8;
+	height:100vh;
+	transition:all .5s;
+}
+.navbar .drop-btn {
+	width:80vw;
+	padding:20px 0;
+}
+#dropdown:hover{
+	color:gray;
+}
+li{
+	padding-top:10px;
+	border-bottom:1px solid black;
+}
+.men-btn{
+	display:block;
+}
+.logbox{
+	max-width:70%;
+}
+}
+
+/*admin page*/
+
+.admin-navbar {
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	align-items:center;
+	background-color:#2b2b2b;
+	position:sticky;
+	top:0;
+}
+.profile, .admin-navbar, .name h2, .name h6{
+	color:#f4f4f4;
+}
+.profile{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin:10px 20px;
+}
+.profile img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	margin:0 10px;
+}
+.btns{
+	margin:5px 20px;
+}
+.navbtn{
+	padding:10px 5px;
+	background-color:#C8B6A6;
+	border:none;
+	border-radius:10px;
+	margin:10px;
+}
+.navbtn:hover{
+	background-color:#F8EAD8;
+}
+@media only screen and (max-width: 725px){
+	.profile{
+		margin:auto;
+	}
+	.btns{
+		margin:auto;
+	}
+	.navbtn{
+		padding:10px;
+	}
+	.profile img{
+		margin:0 5px;
+	}
+}
+/*.useracc, .history, .products{
+	border:1px solid black;
+}*/
+.table{
+	width:60vw;
+	text-align:center;
+	margin:15% auto;
+	font-size:25px;
+}
+.products{
+	margin: 10% auto;
+}
+.uploadimg {
+	display:flex;
+	flex-direction:column;
+}
+.admin-title {
+	width:100vw;
+	height: 100px;
+	background-color:#2b2b2b;
+	margin:50px 0 0 0;
+	display:flex;
+	align-items:center;
+}
+.admin-title h1{
+	color:#f4f4f4;
+	margin:auto;
+}
+input{
+	color:black;
+	margin:10px 0;
+	flex-direction:column;
+	padding:10px;
+	font-size:20px;
+}
+label{
+	font-size:30px;
+	font-weight:bold;
+}
+.choose{
+	background:#2b2b2b;
+	color:#f4f4f4;
+}
+.upload{
+	text-align:center;
+	width:60vw;
+	margin:auto;
+	padding:10px 0;
+	background-color:#C8B6A6;
+	border:none;
+	border-radius:5px;
+}
+.upload:hover{
+	background-color:#F8EAD8;
+}
+@media only screen and (max-width: 725px){
+	.upload{
+		width:90vw;
+	}
+	.table{
+		width:90vw;
+		font-size:20px;
+	}
+
+}
